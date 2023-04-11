@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie R Patton - Homepage</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #DEDDD9;
+        }
+        .hero {
+            max-width: 50vw;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-top: 1px solid #0D1814;
+            border-bottom: 1px solid #0D1814;
+            border-radius: 2px;
+            padding: 5rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            /* text-align: center; */
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .hero__button {
+            color: white;
+            background-color: #037456;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+
+        }
+
+        .hero__button:hover {
+            background-color: #0E392B;
+            cursor: pointer;
+        }
+        .hero__image {
+            background-image: url(images/hero_image.jpeg);
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 1rem;
+           
+        }
+
+        .logo {
+            background-image: url(images/logo_text_only.png);
+            width: 100%;
+            height: 50px;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 3rem;
+           
+        }
+
+        @media screen and (max-width: 1010px){
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            .hero__image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/"><div class="logo"></div></a>
+    </header>
+    <div class="hero">
+        <div class="hero__image"></div>
+       <div class="hero__content-wrapper">
+            <h1>Coming Soon</h1>
+            <p>Thank you for for coming to visit. Excuse the mess, I am still in the process of moving into this new space. Since you are here, feel free to leave me a note that you stopped by. </p>
+            <a class="hero__button" href="https://stephrpatton.formaloo.net/contact" target="_blank">Contact Me</a>
+       </div>
+    </div>
+    
+</body>
+</html>
